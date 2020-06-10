@@ -1,0 +1,27 @@
+<view style="display:flex;flex-direction:row;">
+  <view class="bar">
+    <view style="display:flex;flex-direction:column;">
+    <view class="bar-item bar-left-item" bindtap="onScoreAdd10Tap">+10</view>
+      <view class="bar-item bar-left-item" bindtap="onScoreSub10Tap">-10</view>
+      <view class="bar-item bar-left-item" bindtap="onScoreAddQTap">+Q</view>
+      <view class="bar-item bar-left-item" bindtap="onScoreSubQTap">-Q</view>
+      <view class="bar-item bar-left-item bar-last-item" bindtap="onScoreKTap">K</view>
+    </view>
+  </view>
+  <view class="score" bindlongtap="onScoreLongTap">
+    <text>{{score}}</text>
+  </view>
+  <view class="bar">
+    <view style="display:flex;flex-direction:column;">
+      <view class="bar-item bar-right-item" bindtap="onScore3Tap">+3</view>
+      <view class="bar-item bar-right-item" bindtap="onScore4Tap">+4</view>
+      <view class="bar-item bar-right-item" bindtap="onScore5Tap">+5</view>
+      <view class="bar-item bar-right-item" bindtap="onScore6Tap">+6</view>
+      <view class="bar-item bar-right-item bar-last-item" bindtap="onScore9Tap">+9</view>
+    </view>
+  </view>
+</view>
+<modal title="请输入分数" hidden="{{hiddenScoreInput}}" confirm-text="确定" cancel-text="取消"
+  bindconfirm="onScoreInputConfirm" bindcancel="onScoreInputCancel">
+  <input type="number" bindinput="onScoreInput" />
+</modal>

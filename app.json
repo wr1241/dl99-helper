@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/scoreboard/scoreboard"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "DL99小助手 长按分数可修改",
+    "navigationBarTextStyle": "black",
+    "pageOrientation": "landscape"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
